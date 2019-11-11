@@ -6,11 +6,46 @@
 </head>
 <body>
 <script>
-    let count = 0;
-    while (count < 2) {
-        for (i=0; i< ;i++) {
-            for (j=0; j< ; j++)
+    let i,j;
+    let space = 10;
+    let draw = 10;
+
+    for (i = 0; i < 5; i++) {
+        for (j = 0; j < space; j++) {
+            document.write('&nbsp');
         }
+        for (j = 0; j < draw; j++) {
+            document.write('*');
+        }
+        for (j = 0; j < space * 2; j++) {
+            document.write('&nbsp');
+        }
+        for (j = 0; j < draw; j++) {
+            document.write('*');
+        }
+        document.write('<br>');
+        space -= 2;
+        draw += 2;
+    }
+
+    for (i = 0; i < 5; i++) {
+        for (j = 0; j < 40; j++) {
+            document.write('*');
+        }
+        document.write('<br>');
+    }
+
+    let space1 = 0;
+
+    for (i = 0; i < 10; i++) {
+        for (j = 0; j < space1; j++) {
+            document.write('&nbsp&nbsp');
+        }
+        for (j=0; j < 40 - space1 * 2; j++) {
+            document.write('*');
+        }
+        document.write('<br>');
+        space1 += 2;
     }
 </script>
 </body>
