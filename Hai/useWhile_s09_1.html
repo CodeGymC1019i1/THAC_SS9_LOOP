@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>until -1</title>
+</head>
+<body>
+<p id="displaynumbes"></p>
+<p id="displaysum"></p>
+<script>
+    let number;
+    let sum = 0;
+    let sumstr = '';
+
+    do {
+        number =  prompt('Nhập vào một số: ');
+        sumstr += number + ' ';
+        sum += parseFloat(number);
+    }
+    while (number != '-1')
+    document.getElementById("displaynumbes").innerHTML = 'Các số bạn đã nhập là: ' + sumstr;
+    document.getElementById("displaysum").innerHTML = 'Tổng các số bạn đã nhập: ' + sum;
+
+</script>
+</body>
+</html>

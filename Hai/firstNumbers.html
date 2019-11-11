@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>first numbers</title>
+</head>
+<body>
+<script>
+    let countEnd = parseInt(prompt("Nhập vào số các số nguyên tố cần in: "));
+    let  checkNumber= 2, count = 0;
+    let str = '';
+    while (count < countEnd)
+    {
+        i = 2;
+        while (checkNumber % i != 0)
+        {
+            i++;
+        }
+        if (i == checkNumber) {
+            str += ' ' + i;
+            count++;
+        }
+        checkNumber++;
+    }
+    alert('Chuỗi nguyên tố cần in: ' + str);
+
+</script>
+</body>
+</html>
